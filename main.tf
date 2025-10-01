@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "adedeji-jenkins"
-    key    = "terraform.tfstate"
+    key    = "newresource.tfstate"
     region = "us-east-1"
   }
 }
@@ -113,4 +113,5 @@ resource "aws_instance" "foo" {
 
 
 }
+
 
